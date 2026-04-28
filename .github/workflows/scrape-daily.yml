@@ -2,8 +2,8 @@ name: Quét Dự Thảo Văn Bản Hàng Ngày
 
 on:
   schedule:
-    - cron: '0 1 * * *'      # Chạy lúc 8h sáng giờ Việt Nam (UTC+7)
-  workflow_dispatch:         # Cho phép chạy thủ công
+    - cron: '0 1 * * *'   # 8h sáng giờ Việt Nam
+  workflow_dispatch:
 
 jobs:
   scrape:
@@ -29,7 +29,7 @@ jobs:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
 
-      - name: Upload báo cáo
+      - name: Upload báo cáo (để tải thủ công)
         uses: actions/upload-artifact@v4
         with:
           name: bao-cao-du-thao
