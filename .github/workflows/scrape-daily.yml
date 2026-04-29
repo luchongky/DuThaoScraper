@@ -2,8 +2,8 @@ name: Quét Dự Thảo Văn Bản Hàng Ngày
 
 on:
   schedule:
-    - cron: '0 1 * * *'      # Chạy lúc 8:00 sáng giờ Việt Nam (mỗi ngày)
-  workflow_dispatch:         # Cho phép chạy thủ công
+    - cron: '0 1 * * *'      # 8:00 sáng giờ Việt Nam mỗi ngày
+  workflow_dispatch:
 
 jobs:
   scrape:
