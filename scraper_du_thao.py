@@ -8,7 +8,7 @@ import time
 import requests
 
 # ================== CẤU HÌNH TELEGRAM ==================
-TELEGRAM_TOKEN = "8372947939:AAE4epPhF_l_HOuw2dYDf4owCHDSAcp82gw"
+TELEGRAM_TOKEN = "8864460986:AAGGvuBpu0w3Ajs4z8X-fvsHQ8HRW99lo1U"
 TELEGRAM_CHAT_ID = "993391522"
 # =====================================================
 
