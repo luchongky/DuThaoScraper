@@ -9,7 +9,7 @@ import requests
 
 # ================== CẤU HÌNH TELEGRAM ==================
 TELEGRAM_TOKEN = "8864460986:AAGGvuBpu0w3Ajs4z8X-fvsHQ8HRW99lo1U"
-TELEGRAM_CHAT_ID = "993391522"
+TELEGRAM_CHAT_ID = "938226751"
 # =====================================================
 
 EXCEL_FILE = "danh_sach_tinh.xlsx"
