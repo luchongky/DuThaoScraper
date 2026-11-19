@@ -86,7 +86,10 @@
     .empty strong { display: block; color: var(--ink); font-size: 16px; }
     .skeleton { height: 85px; border-radius: 15px; background: linear-gradient(90deg,#f1f6f4 25%,#e4efec 37%,#f1f6f4 63%); background-size: 400% 100%; animation: shimmer 1.4s infinite; }
     @keyframes shimmer { 0% { background-position: 100% 0 } 100% { background-position: -100% 0 } }
-    footer { padding: 25px 4px 0; color: var(--muted); font-size: 12px; text-align: center; }
+    footer { display: flex; justify-content: space-between; align-items: center; gap: 18px; padding: 27px 4px 0; color: var(--muted); font-size: 12px; }
+    .copyright { display: inline-flex; align-items: center; gap: 8px; color: var(--ink); font-weight: 750; }
+    .copyright-mark { display: grid; place-items: center; width: 25px; height: 25px; border-radius: 50%; color: var(--brand); background: var(--brand-soft); font-size: 12px; }
+    .source-note { text-align: right; }
     [hidden] { display: none !important; }
     @media (max-width: 720px) {
       .shell { padding: 0 15px 44px; }
@@ -104,6 +107,8 @@
       article { grid-template-columns: 34px minmax(0,1fr); gap: 11px; padding: 15px 13px; }
       .result-number { width: 30px; height: 30px; }
       .result-arrow { grid-column: 2; justify-self: start; margin-top: 2px; }
+      footer { align-items: flex-start; flex-direction: column; gap: 10px; padding-left: 2px; padding-right: 2px; }
+      .source-note { text-align: left; }
     }
   </style>
 </head>
@@ -154,7 +159,10 @@
         <button class="more" id="more" type="button" hidden>Xem thêm văn bản</button>
       </section>
     </main>
-    <footer>Dữ liệu nguồn được tổng hợp tự động từ các cổng thông tin điện tử địa phương.</footer>
+    <footer>
+      <span class="copyright"><span class="copyright-mark">©</span>2026 Lục Hồng Kỳ · Sở Tài chính tỉnh Cao Bằng</span>
+      <span class="source-note">Dữ liệu được tổng hợp tự động từ các cổng thông tin điện tử địa phương.</span>
+    </footer>
   </div>
 
   <script>
