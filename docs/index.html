@@ -1,44 +1,46 @@
 <!doctype html>
-<html lang="vi"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Quét VB · Dự thảo văn bản</title>
-<style>*{box-sizing:border-box}body{margin:auto;max-width:980px;padding:5vw;font:17px/1.6 system-ui;color:#163540;background:#f6faf9}h1{font: bold clamp(32px,6vw,58px)/1.1 Georgia}a{color:#006458}li{padding:8px}ul{columns:2}input{padding:10px;width:min(100%,400px)}@media(max-width:600px){ul{columns:1}}</style>
-<main><p>QUÉT VB</p><h1>Tra cứu dự thảo văn bản</h1><p>Mở chuyên mục lấy ý kiến của từng tỉnh, thành phố trong danh mục nguồn của dự án.</p><label>Tìm tỉnh, thành phố<br><input type="search" id="query"></label><p id="count" aria-live="polite">33 nguồn</p><ul><li><a href="https://vanban.hanoi.gov.vn/du-thao-cac-van-ban-lay-y-kien-dong-gop">Hà Nội</a></li>
-<li><a href="https://haiphong.gov.vn/xin-y-kien-nhan-dan">Hải Phòng</a></li>
-<li><a href="https://hue.gov.vn/Cong-dan/Lay-y-kien-nhan-dan-ve-du-thao-van-ban-phap-luat">Huế</a></li>
-<li><a href="https://danang.gov.vn/web/dng/gop-y-du-thao-van-ban-quy-pham-phap-luat">Đà Nẵng</a></li>
-<li><a href="https://hochiminhcity.gov.vn/van-ban-du-thao">Tp. Hồ Chí Minh</a></li>
-<li><a href="https://cantho.gov.vn/lay-y-kien-du-thao-van-ban">Cần Thơ</a></li>
-<li><a href="https://www.tuyenquang.gov.vn/vi/category/du-thao">Tuyên Quang</a></li>
-<li><a href="https://laichau.gov.vn/lay-y-kien-nhan-dan-ve-du-thao-van-ban">Lai Châu</a></li>
-<li><a href="https://www.laocai.gov.vn/Default.aspx?sname=lci&amp;sid=1365&amp;pageid=95232">Lào Cai</a></li>
-<li><a href="https://thainguyen.gov.vn/gop-y-du-thao-van-ban?pageid=36291">Thái Nguyên</a></li>
-<li><a href="https://dienbien.gov.vn/vi/du-thao-van-ban?pageNumber=1&amp;pageSize=10">Điện Biên</a></li>
-<li><a href="https://langson.gov.vn/gop-y-du-thao">Lạng Sơn</a></li>
-<li><a href="https://sonla.gov.vn/gop-y-du-thao">Sơn La</a></li>
-<li><a href="https://phutho.gov.vn/Pages/ykienduthao.aspx">Phú Thọ</a></li>
-<li><a href="https://bacninh.gov.vn/gop-y-du-thao-van-ban">Bắc Ninh</a></li>
-<li><a href="https://www.quangninh.gov.vn/Trang/tai-lieu-tra-cuu.aspx?loaiVanBan=G%C3%B3p%20%C3%BD%20v%C3%A0o%20d%E1%BB%B1%20th%E1%BA%A3o%20v%C4%83n%20b%E1%BA%A3n%20QPPL">Quảng Ninh</a></li>
-<li><a href="https://hungyen.gov.vn/van-ban-du-thao.html">Hưng Yên</a></li>
-<li><a href="https://ninhbinh.gov.vn/lay-y-kien-du-thao-van-ban">Ninh Bình</a></li>
-<li><a href="https://thanhhoa.gov.vn/portal/Pages/Cong-khai-tham-van-cong-dong.aspx">Thanh Hóa</a></li>
-<li><a href="https://www.nghean.gov.vn/lay-y-kien-du-thao-van-ban-quy-pham-phap-luat">Nghệ An</a></li>
-<li><a href="https://hatinh.gov.vn/vi/du-thao-van-ban?pageNumber=1&amp;pageSize=10">Hà Tĩnh</a></li>
-<li><a href="https://www.quangtri.gov.vn/lay-y-kien-du-thao-van-ban">Quảng Trị</a></li>
-<li><a href="https://quangngai.gov.vn/gop-y-du-thao">Quảng Ngãi</a></li>
-<li><a href="https://gialai.gov.vn/lay-y-kien-gop-y-du-thao-van-ban-quy-pham-phap-luat">Gia Lai</a></li>
-<li><a href="https://daklak.gov.vn/gop-y-du-thao">Đắk Lắk</a></li>
-<li><a href="https://khanhhoa.gov.vn/vi/lay-y-kien-du-thao-van-ban-qppl/lay-y-kien-gop-y-du-thao-vbqppl">Khánh Hoà</a></li>
-<li><a href="https://lamdong.gov.vn/layykien/SitePages/Lay-y-kien-du-thao-van-ban.aspx">Lâm Đồng</a></li>
-<li><a href="https://dongnai.gov.vn/vi/gop-y-du-thao/">Đồng Nai</a></li>
-<li><a href="https://tayninh.gov.vn/gop-y-du-thao-van-ban?pageid=36291">Tây Ninh</a></li>
-<li><a href="https://vinhlong.gov.vn/du-thao-quy-pham-phap-luat">Vĩnh Long</a></li>
-<li><a href="https://dongthap.gov.vn/lay-y-kien-du-thao-van-ban">Đồng Tháp</a></li>
-<li><a href="https://angiang.gov.vn/vi/lay-y-kien-du-thao-vb">An Giang</a></li>
-<li><a href="https://camau.gov.vn/lay-y-kien-xay-dung-van-ban-qppl">Cà Mau</a></li></ul></main><script>
-const normalize = text => text.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replaceAll('đ','d');
-query.oninput = () => {
-  const term = normalize(query.value.trim());
-  const items = [...document.querySelectorAll('li')];
-  items.forEach(item => item.hidden = !normalize(item.textContent).includes(term));
-  count.textContent = items.filter(item => !item.hidden).length + ' nguồn';
-};
+<html lang="vi"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Tra cứu dự thảo văn bản</title>
+<style>*{box-sizing:border-box}body{max-width:1040px;margin:auto;padding:4vw;font:16px/1.6 system-ui;background:#f5f8fa;color:#183846}h1{font-size:clamp(28px,5vw,48px)}input,select,button{font:inherit;padding:.55em;max-width:100%;margin:.3em}article{background:white;border-bottom:1px solid #ccd8dc;padding:1em}small{display:block;color:#496475}a{color:#005e70}</style>
+<main><h1>Tra cứu dự thảo văn bản</h1><input id="query" type="search" aria-label="Tìm tên văn bản" placeholder="Tìm tên văn bản"><select id="province" aria-label="Lọc tỉnh"><option value="">Tất cả tỉnh, thành</option></select><button id="reload">Tải lại dữ liệu</button><p id="status" role="status"></p><section id="results"></section><button id="more" hidden>Xem thêm</button></main>
+<script>
+const byId = id => document.getElementById(id);
+const normalize = text => String(text || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replaceAll('đ','d');
+let documents = [], limit = 100;
+function render() {
+  const matches = documents.filter(row => (!province.value || row.tinh === province.value) && normalize(row.tieuDe).includes(normalize(query.value.trim())));
+  results.replaceChildren();
+  for (const row of matches.slice(0, limit)) {
+    const card = document.createElement('article');
+    const meta = document.createElement('small');
+    meta.textContent = [row.tinh,row.ngay].filter(Boolean).join(' · ');
+    const title = document.createElement(/^https?:\/\//i.test(row.linkTrang) ? 'a' : 'span');
+    if (title.tagName === 'A') title.href = row.linkTrang;
+    title.textContent = row.tieuDe;
+    card.append(meta,title);
+    results.append(card);
+  }
+  byId('status').textContent = matches.length + ' văn bản';
+  more.hidden = matches.length <= limit;
+}
+async function refresh() {
+  reload.disabled = true;
+  byId('status').textContent = 'Đang tải văn bản từ Apps Script…';
+  try {
+    const response = await fetch('https://script.google.com/macros/s/AKfycbwU2Q885LjgO-t2sBxZFEfX7Ns9GY8lC7nquIBJIVJPe33SgO1BFwAZuqejuFe-cdZ3/exec?view=documents',{cache:'no-store'});
+    const data = await response.json();
+    if (!response.ok || !Array.isArray(data)) throw Error();
+    documents = data;
+    const selected = province.value;
+    province.replaceChildren(new Option('Tất cả tỉnh, thành',''));
+    for (const name of [...new Set(data.map(row=>row.tinh).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'vi'))) province.add(new Option(name,name));
+    province.value = selected;
+    limit = 100;
+    render();
+  } catch { byId('status').textContent = 'Chưa tải được văn bản. Bạn hãy bấm Tải lại dữ liệu.'; }
+  finally { reload.disabled = false; }
+}
+query.oninput = province.onchange = () => {limit = 100; render();};
+more.onclick = () => {limit += 100; render();};
+reload.onclick = refresh;
+refresh();
 </script></html>
